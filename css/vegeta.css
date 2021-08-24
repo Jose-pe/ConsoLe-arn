@@ -1,3 +1,22 @@
-#botonera{
-    background-color: black;
+/*Mi CSS */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+
+*{
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: 0.1rem;
 }
+
+body{
+    background-color: black;
+    color:rgb(255, 255, 255);
+}
+
+#botonera{
+    background-color: rgb(26, 24, 24);
+}
+
+/*Helpers Bulma*/
+.title
+{
+    letter-spacing: 1.5rem;
+}    
