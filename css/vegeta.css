@@ -10,13 +10,77 @@ body{
     background-color: black;
     color:rgb(255, 255, 255);
 }
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    
+}
 
 #botonera{
     background-color: rgb(26, 24, 24);
 }
+#ventana{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    padding: 1rem;
+    margin: 0rem;
+    background-color: black;
+    
+}
+#barra{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width:100%;
+    background-color: rgb(20, 90, 49);
+}
+#pantalla{ 
+ 
+    display: flex;
+    flex-direction: column;    
+    width: 80%;
+    height: 25rem;
+    background-color: rgb(17, 16, 16);    
+    border-color: rgb(20, 90, 49);
+    border-style: solid;
+    border-width: 11px;
+    border-radius: 1rem;
+}
+#rojo{
+    
+    color: rgb(190, 65, 65);
+}
+#amarillo{
+    color: rgb(224, 213, 49);
+}
+
+#comandos{
+    color: rgb(44, 177, 133);
+    
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    color: rgb(44, 177, 133);
+}
 
 /*Helpers Bulma*/
-.title
-{
+.title{
     letter-spacing: 1.5rem;
 }    
+.navbar-item{
+    color: #29ac5f;
+    font-size:1.4rem;
+    background-color: black;
+    margin: 0.5rem;
+}
+.navbar-item:hover{
+    background-color: rgb(3, 3, 3) !important;
+    color: #3EC487 !important;
+}

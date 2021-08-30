@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bulma.css">
     <link rel="stylesheet" href="css/vegeta.css">
+    <link rel="stylesheet" href="css/solid.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>ConsoLearn</title>
 </head>
 <body>
         <section class="container">
-            <nav>
-                <a href=""> Basicos </a> | <a href="">Redes</a> | <a href="">Avanzado</a>
-            
+            <nav class="navbar p-1" id="menu">
+                
+                  
+                    <a class="navbar-item" href="">  Basicos  </a>   <a  class="navbar-item" href="">  Redes  </a>    <a  class="navbar-item" href=""> Avanzado </a>
+                 
+      
+                           
             </nav>
         </section>
     <section class="section" id="botonera">
@@ -20,16 +26,16 @@
                        
                     <div class="columns m-3 is-flex-wrap-wrap">
                           <div class="column">
-                            <button class="button is-success is-rounded m-3">Rounded</button>
+                            <button value="0" id="botonconsola" class="button is-success is-rounded m-3" >Apagar</button>
                           </div> 
                           <div class="column">
-                            <button class="button is-success is-rounded m-3">Rounded</button>
+                            <button value="1" id="botonconsola" class="button is-success is-rounded m-3" >Reiniciar</button>
                           </div> 
                           <div class="column">
-                            <button class="button is-success is-rounded m-3">Rounded</button>
+                            <button value="3" id="botonconsola" class="button is-success is-rounded m-3" >Rounded</button>
                           </div> 
                           <div class="column">
-                            <button class="button is-success is-rounded m-3">Rounded</button>
+                            <button value="4" id="botonconsola" class="button is-success is-rounded m-3">Rounded</button>
                           </div> 
                           <div class="column">
                             <button class="button is-success is-rounded m-3">Rounded</button>
@@ -89,16 +95,29 @@
             <div class="columns">
 
                     <div class="column is-four-fifths m-auto">
-                        
-                        <div id="pantalla">
-                            <h1> hey aqui va la pantalla</h1>
-                        </div>
-                          
+                    
+                      <div id="ventana">
+                                             
+                      <div id="pantalla">
+                           <div id="barra">
+                            <p> <i id="amarillo" class="fa fa-circle p-1" aria-hidden="true"></i> <i id="rojo" class="fa fa-circle" aria-hidden="true"></i> </p>
+                          </div>
+                            <div id="comandos" class="subtitle p-5">
+                              <p id="comando">user:> cd /var/www/ </p>
+                            </div>                            
+                        </div>                        
+                      </div>
                     </div>
 
             </div>
 
     </section>
+
+    <section id="footer" class="footer">
+          <p>ConsoLearn_ <a class="has-text-link" href="">git repositori</a></p>
+    </section>
+<script src="js/main.js"></script>
+
 
 </body>
 </html>
