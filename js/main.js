@@ -33,8 +33,44 @@ comandos = [
     {
         "nombre":"Crear directorio",
         "comando":"mkdir",
-        "descripcion":"Crear carpetas en el directori actual",
+        "descripcion":"Crear carpetas en el directorio actual",
         "aplicacion":"mkdir nombredecarpeta"
+    },    
+    {
+        "nombre":"Cerrar Sesion",
+        "comando":"logout",
+        "descripcion":"Cierra la sesion del usuario actual",
+        "aplicacion":"logout"
+    },
+    {
+        "nombre":"Borrar fichero",
+        "comando":"rm -f",
+        "descripcion":"Borrar el fichero con el nombre añadido en el comando.",
+        "aplicacion":"rm -f nombredefichero"
+    },
+    {
+        "nombre":"Borrar directorio",
+        "comando":"rmdir",
+        "descripcion":"borrar la carpeta con el nombre añadido en el comando.",
+        "aplicacion":"rmdir nombredecarpeta"
+    },
+    {
+        "nombre":"Copiar fichero",
+        "comando":"cp",
+        "descripcion":"Copia el fichero con el nombre añadido en el comando.",
+        "aplicacion":"cp nombredefichero nombrededirectoriodestino"
+    },
+    {
+        "nombre":"Copiar directorio",
+        "comando":"cp -a",
+        "descripcion":"Copia el directorio con el nombre añadido en el comando.",
+        "aplicacion":"cp -a nombrededirectorio"
+    },
+    {
+        "nombre":"Fecha y Hora",
+        "comando":"date",
+        "descripcion":"Muestra la fecha y hora actual",
+        "aplicacion":"date"
     }
 ];
 
