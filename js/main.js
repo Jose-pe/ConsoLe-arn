@@ -8,14 +8,14 @@ comandos = [
     {
         "nombre":"Apagar",
         "comando":"shutdown -h now",
-        "descripcion":"apaga el sistema de forma inmediata.",
+        "descripcion":"Apaga el sistema de forma inmediata.",
         "aplicacion":"shutdown -h now"
     },
 
     {
         "nombre":"Reiniciar",
         "comando":"reboot",
-        "descripcion":"Reinia el sistema.",
+        "descripcion":"Reinicia el sistema.",
         "aplicacion":"reboot"
     },
     {
@@ -88,7 +88,7 @@ const botones = document.querySelectorAll('#botonconsola');
 //funcion que obtiene el value de el boton al hacer clik para relacionarlo con un index del objeto comandos e
 const clickbotonconsola = function (event){
 
-       index = this.value; 
+       index = this.value;            
        mostrarcomando(index);
     
 }
@@ -118,10 +118,18 @@ botones.forEach(boton =>{
 //funcion que escribe los comandos 
 
 function mostrarcomando(index) {      
- 
-    comando= user + comandos[index].aplicacion;    
+   
+    let comandoanimado = document.querySelector('#comando').outerHTML; 
+    let descripcionanimada = document.querySelector('#descripcion').outerHTML;      
+    document.querySelector('#descripcion').remove();
+    document.querySelector('#comando').remove();
+    document.querySelector('#descripciones').innerHTML=descripcionanimada;
+    document.querySelector('#comandos').innerHTML= comandoanimado;
+    comando= user + comandos[index].aplicacion;  
+    descripcion= comandos[index].descripcion;         
     document.querySelector('#comando').innerHTML=comando;       
-
+    document.querySelector('#descripcion').innerHTML=descripcion;
+    
 }
 
 

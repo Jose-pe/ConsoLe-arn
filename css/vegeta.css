@@ -4,11 +4,13 @@
 *{
     font-family: 'Prompt', sans-serif;
     letter-spacing: 0.1rem;
+    
 }
 
 body{
     background-color: black;
     color:rgb(255, 255, 255);
+    
 }
 #menu{
     display: flex;
@@ -20,6 +22,10 @@ body{
 
 #botonera{
     background-color: rgb(26, 24, 24);
+}
+#nombreapp{
+    margin-top: 5rem !important;
+    margin-bottom: 4rem;
 }
 #ventana{
     display: flex;
@@ -62,12 +68,22 @@ body{
     
 }
 
+#descripcion{
+    margin: 5rem;
+    text-align: center;
+    color: rgb(44, 177, 133);
+    font-size: 1.3rem;
+    animation:aparecedescripcion 6s;
+	-webkit-animation:aparecedescripcion 7s;
+}
+
 #footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: black;
     color: rgb(44, 177, 133);
+    
 }
 
 /*Helpers Bulma*/
@@ -83,4 +99,52 @@ body{
 .navbar-item:hover{
     background-color: rgb(3, 3, 3) !important;
     color: #3EC487 !important;
+}
+
+/*animacion*/ 
+.line {
+    display: flex;
+    position: relative;
+    top: 50%;
+    width: auto;    
+    border-right: 1px solid rgba(22, 206, 77, 0.75);
+    font-size: 140%;   
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+}
+.anim-typewriter {
+    animation: typewriter 4s steps(36) 1s 1 normal both,
+    blinkTextCursor 900ms steps(36) infinite normal;
+    
+}
+
+@keyframes typewriter {
+    from {
+          width: 0;
+    }
+    to {
+          width: 65rem;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+          border-right-color: rgba(48, 175, 75, 0.75);
+    }
+    to {
+          border-right-color: transparent;
+    }
+}
+
+@keyframes aparecedescripcion
+{
+	from {color:#111010;}
+	to {color:rgb(44, 177, 133);}
+}
+
+@-webkit-keyframes aparecedescripcion /* Safari and Chrome */
+{
+	from {color:#111010;}
+	to {color:rgb(44, 177, 133);}
+   
 }
