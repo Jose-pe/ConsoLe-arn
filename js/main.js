@@ -21,7 +21,7 @@ comandos = [
     {
         "nombre":"Navegar",
         "comando":"cd",
-        "descripcion":"navegar entre carpetas.",
+        "descripcion":"Navegar entre carpetas.",
         "aplicacion":"cd /home/var"
     },
     {
@@ -51,7 +51,7 @@ comandos = [
     {
         "nombre":"Borrar directorio",
         "comando":"rmdir",
-        "descripcion":"borrar la carpeta con el nombre añadido en el comando.",
+        "descripcion":"Borrar la carpeta con el nombre añadido en el comando.",
         "aplicacion":"rmdir nombredecarpeta"
     },
     {
@@ -71,6 +71,24 @@ comandos = [
         "comando":"date",
         "descripcion":"Muestra la fecha y hora actual",
         "aplicacion":"date"
+    },
+    {
+        "nombre":"Ruta actual",
+        "comando":"pwd",
+        "descripcion":"Muestra la ruta actual",
+        "aplicacion":"pwd"        
+    },
+    {
+        "nombre":"Crear fichero",
+        "comando":"touch",
+        "descripcion":"Crear un fichero index.html en la ruta /var/www/",
+        "aplicacion":"touch var/www/index.html"        
+    },
+    {
+        "nombre":"Buscar fichero",
+        "comando":"find",
+        "descripcion":"Buscar archivo por su nombre en el directorio actual",
+        "aplicacion":"find -name notas.txt"        
     }
 ];
 

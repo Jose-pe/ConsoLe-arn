@@ -3,6 +3,7 @@
 
 *{
     font-family: 'Prompt', sans-serif;
+    font-size: 1rem;
     letter-spacing: 0.1rem;
     
 }
@@ -21,7 +22,14 @@ body{
 }
 
 #botonera{
-    background-color: rgb(26, 24, 24);
+    background-color: black;
+    border-top: #145A31 solid 1px;
+    border-bottom: #145A31 solid 1px;
+}
+#botonconsola{
+    color: rgb(31, 30, 30);
+    font-weight: bold;
+    
 }
 #nombreapp{
     margin-top: 5rem !important;
@@ -62,16 +70,15 @@ body{
 #amarillo{
     color: rgb(224, 213, 49);
 }
-
 #comandos{
-    color: rgb(44, 177, 133);
-    
+    color: rgb(44, 177, 133);   
+    display: flex;
 }
-
 #descripcion{
-    margin: 5rem;
+    
     text-align: center;
     color: rgb(44, 177, 133);
+    margin-top: 5rem;
     font-size: 1.3rem;
     animation:aparecedescripcion 6s;
 	-webkit-animation:aparecedescripcion 7s;
@@ -103,10 +110,10 @@ body{
 
 /*animacion*/ 
 .line {
-    display: flex;
+    display: flex;    
     position: relative;
-    top: 50%;
-    width: auto;    
+    top: 60%;     
+    width: auto;  
     border-right: 1px solid rgba(22, 206, 77, 0.75);
     font-size: 140%;   
     white-space: nowrap;
@@ -120,10 +127,12 @@ body{
 
 @keyframes typewriter {
     from {
-          width: 0;
+          max-width: 0rem;
     }
     to {
-          width: 65rem;
+           
+           max-width:80%;           
+            
     }
 }
 
