@@ -25,15 +25,32 @@ body{
     background-color: black;
     border-top: #145A31 solid 1px;
     border-bottom: #145A31 solid 1px;
+    margin-bottom: 4rem;
 }
 #botonconsola{
     color: rgb(31, 30, 30);
     font-weight: bold;
     
 }
+#botoneramovil{
+    display: none;
+}
+#basicomovil{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
 #nombreapp{
-    margin-top: 5rem !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5rem;
     margin-bottom: 4rem;
+    max-width: 100%;
+    
 }
 #ventana{
     display: flex;
@@ -131,7 +148,7 @@ body{
     }
     to {
            
-           max-width:80%;           
+           max-width:100%;           
             
     }
 }
@@ -156,4 +173,71 @@ body{
 	from {color:#111010;}
 	to {color:rgb(44, 177, 133);}
    
+}
+
+@media (max-width: 1450px) {
+
+    #nombreapp h1{
+        font-size: 1.8rem;        
+    }
+
+    #comando{
+        font-size: 0.8rem;
+    }
+    #descripcion{
+        font-size: 0.7rem;
+        padding: 0.8rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    #botonera{
+        padding: 0rem;        
+        
+    }
+    #basico
+    {
+        display: flex;
+        flex-direction: row;
+        
+    }
+    #nombreapp h1{
+        font-size: 1.3rem;  
+        letter-spacing: 1rem;      
+    }
+    #botonconsola{
+        width: 8rem;
+        font-size: 0.7rem;
+        margin: 0.2rem;   
+    }
+       
+}
+@media (max-width: 525px) {
+
+    #botonera{
+        display: none;    
+        
+    }
+    #nombreapp{
+        width: 100%;
+        margin: auto;
+        padding: auto;
+        margin-bottom: 3rem;
+    }
+    #nombreapp h1{
+        font-size: 0.9rem;        
+    }
+
+    #sectionconsola{
+        padding: 0;
+    }
+    #ventana{
+        padding: 0;
+    }
+    #botoneramovil{
+        display: flex;
+    }
+
 }
