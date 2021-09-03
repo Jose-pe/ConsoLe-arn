@@ -66,6 +66,7 @@ body{
     flex-direction: row;
     justify-content: flex-end;
     width:100%;
+    border: 4px solid rgb(20, 90, 49);
     background-color: rgb(20, 90, 49);
 }
 #pantalla{ 
