@@ -3,7 +3,7 @@ let comando;
 let descripcion;
 let aplicacion;
 
-comandos = [
+let comandos = [
 
     {
         "nombre":"Apagar",
@@ -87,8 +87,152 @@ comandos = [
     {
         "nombre":"Buscar fichero",
         "comando":"find",
-        "descripcion":"Buscar archivo por su nombre en el directorio actual",
+        "descripcion":"Buscar archivo por su nombre en el directorio actual.",
         "aplicacion":"find -name notas.txt"        
+    },
+    {
+        "nombre":"Ver IP",
+        "comando":"ip a",
+        "descripcion":"Nos muestra informacion de nuestras interfaces de red.",
+        "aplicacion":"ip a"        
+    },
+    {
+        "nombre":"Ping",
+        "comando":"ping",
+        "descripcion":"Utilice ping para ver si un host está vivo.",
+        "aplicacion":"ping 192.168.100.102"        
+    },
+    {
+        "nombre":"Info de host",
+        "comando":"host",
+        "descripcion":"Utilice host para obtener informacion de un host.",
+        "aplicacion":"host www.google.com"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
+    },
+    {
+        "nombre":"Traceroute",
+        "comando":"Traceroute",
+        "descripcion":"Lista los hosts que han usado los paquetes para llegar a su destino.",
+        "aplicacion":"traceroute www.google.com"        
+    },
+    {
+        "nombre":"Route",
+        "comando":"route",
+        "descripcion":"Permite ver la ruta que usa nuestro equipo para conectarse a la red.",
+        "aplicacion":"route -n"        
+    },
+    {
+        "nombre":"Who",
+        "comando":"who",
+        "descripcion":"Nos permite ver a todos los usuarios que han iniciado sesión en el equipo.",
+        "aplicacion":"who"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
+    },
+    {
+        "nombre":"Estado de Red",
+        "comando":"netstat",
+        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
+        "aplicacion":"netstat"        
     }
 ];
 
@@ -111,6 +255,42 @@ const clickbotonconsola = function (event){
     
 }
 
+
+//logica de menu de botones 
+
+function mostrarmenuredes(){
+
+    let basicos = document.querySelectorAll('#basico')[0];
+    basicos.style.display="none";
+    let avanzados = document.querySelectorAll('#avanzado')[0];
+    avanzados.style.display="none";
+
+    let redes = document.querySelectorAll('#redes')[0];
+    redes.style.display="flex";
+
+}
+function mostrarbasicos(){
+    let redes = document.querySelectorAll('#redes')[0];
+    redes.style.display="none";
+    let avanzados = document.querySelectorAll('#avanzado')[0];
+    avanzados.style.display="none";
+
+    let basicos = document.querySelectorAll('#basico')[0];
+    basicos.style.display="flex";
+}
+
+function mostraravanzados(){
+    let redes = document.querySelectorAll('#redes')[0];
+    redes.style.display="none";
+    let basicos = document.querySelectorAll('#basico')[0];
+    basicos.style.display="none";
+
+    let avanzados= document.querySelectorAll('#avanzado')[0];
+    avanzados.style.display="flex";
+}
+
+
+
 function nombrarbotones(){
 
     botones.forEach(boton=>{
@@ -124,6 +304,7 @@ function nombrarbotones(){
 }
 
 nombrarbotones();
+
 
 
 //agrego listener a los botones

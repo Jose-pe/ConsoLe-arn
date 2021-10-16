@@ -21,12 +21,18 @@ body{
     
 }
 
+#redes, #avanzado{
+    display: none;
+}
+
 #botonera{
     background-color: black;
     border-top: #145A31 solid 1px;
     border-bottom: #145A31 solid 1px;
     margin-bottom: 4rem;
 }
+
+
 #botonconsola{
     color: rgb(31, 30, 30);
     font-weight: bold;
@@ -42,6 +48,9 @@ body{
     margin-top: 2rem;
 }
 
+#basico{
+    display: flex;
+}
 
 #nombreapp{
     display: flex;
