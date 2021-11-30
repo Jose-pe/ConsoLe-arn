@@ -256,7 +256,7 @@ const clickbotonconsola = function (event){
 }
 
 
-//logica de menu de botones 
+//logica de menu de botones en DESK
 
 function mostrarmenuredes(){
 
@@ -267,6 +267,14 @@ function mostrarmenuredes(){
 
     let redes = document.querySelectorAll('#redes')[0];
     redes.style.display="flex";
+//esto es para el menu movil
+    let basicomovil = document.querySelectorAll('#basicomovil')[0];
+    basicomovil.style.display="none";
+    let avanzadomovil = document.querySelectorAll('#avanzadomovil')[0];
+    avanzadomovil.style.display="none";
+
+    let redesmovil = document.querySelectorAll('#redesmovil')[0];
+    redesmovil.style.display="flex";
 
 }
 function mostrarbasicos(){
@@ -277,6 +285,15 @@ function mostrarbasicos(){
 
     let basicos = document.querySelectorAll('#basico')[0];
     basicos.style.display="flex";
+
+    //esto es para el menu para movil
+    let basicomovil = document.querySelectorAll('#basicomovil')[0];
+    basicomovil.style.display="flex";
+
+    let redesmovil = document.querySelectorAll('#redesmovil')[0];
+    redesmovil.style.display="none";
+    let avanzadomovil = document.querySelectorAll('#avanzadomovil')[0];
+    avanzadomovil.style.display="none";
 }
 
 function mostraravanzados(){
@@ -287,6 +304,23 @@ function mostraravanzados(){
 
     let avanzados= document.querySelectorAll('#avanzado')[0];
     avanzados.style.display="flex";
+
+    //esto es para el menu para movil
+    let avanzadomovil = document.querySelectorAll('#avanzadomovil')[0];
+    avanzadomovil.style.display="flex";
+    
+    let redesmovil = document.querySelectorAll('#redesmovil')[0];
+    redesmovil.style.display="none";
+    let basicomovil = document.querySelectorAll('#basicomovil')[0];
+    basicomovil.style.display="none";
+
+    
+
+}
+
+function mostrarredesmovil(){
+
+    
 }
 
 

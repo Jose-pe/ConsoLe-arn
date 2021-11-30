@@ -48,6 +48,19 @@ body{
     margin-top: 2rem;
 }
 
+#redesmovil{
+    display: none;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#avanzadomovil
+{
+    display: none;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
 #basico{
     display: flex;
 }
