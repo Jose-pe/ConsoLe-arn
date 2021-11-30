@@ -133,107 +133,60 @@ let comandos = [
         "aplicacion":"who"        
     },
     {
-        "nombre":"Estado de Red",
-        "comando":"netstat",
-        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
-        "aplicacion":"netstat"        
+        "nombre":"Lista de Procesos",
+        "comando":"ps aux",
+        "descripcion":"Utilice ps aux para obtener info. de los procesos que corre el host.",
+        "aplicacion":"ps aux"        
     },
     {
-        "nombre":"Estado de Red",
-        "comando":"netstat",
-        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
-        "aplicacion":"netstat"        
+        "nombre":"Estado de memoria",
+        "comando":"free",
+        "descripcion":"Utilice free para obtener info. de la memoria RAM y SWAP.",
+        "aplicacion":"free",        
     },
     {
-        "nombre":"Estado de Red",
-        "comando":"netstat",
-        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
-        "aplicacion":"netstat"        
+        "nombre":"Ultimos usuarios",
+        "comando":"last",
+        "descripcion":"Utilice last para obtener info. de últimos usuarios que han usado el sistema",
+        "aplicacion":"last"        
     },
     {
-        "nombre":"Estado de Red",
-        "comando":"netstat",
-        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
-        "aplicacion":"netstat"        
+        "nombre":"Espacio en discos",
+        "comando":"df",
+        "descripcion":"Utilice df para obtener info. de los discos duros.",
+        "aplicacion":"df"        
     },
     {
-        "nombre":"Estado de Red",
-        "comando":"netstat",
-        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
-        "aplicacion":"netstat"        
+        "nombre":"Inf. del Host",
+        "comando":"uname",
+        "descripcion":"Utilice uname para obtener info. del sistema operativo del host.",
+        "aplicacion":"uname"        
     },
     {
-        "nombre":"Estado de Red",
-        "comando":"netstat",
-        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
-        "aplicacion":"netstat"        
+        "nombre":"Directorios Grafic.",
+        "comando":"tree",
+        "descripcion":"Utilice tree para visualizar archivos y directorios de forma grafica.",
+        "aplicacion":"tree"        
     },
     {
-        "nombre":"Estado de Red",
-        "comando":"netstat",
-        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
-        "aplicacion":"netstat"        
+        "nombre":"Montar Disco",
+        "comando":"mount",
+        "descripcion":"Utilice mount + el nombre del disco para montar una unidad de disco",
+        "aplicacion":"mount sda1"        
     },
     {
-        "nombre":"Estado de Red",
-        "comando":"netstat",
-        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
-        "aplicacion":"netstat"        
+        "nombre":"Desmontar Disco",
+        "comando":"unmount",
+        "descripcion":"Utilice unmount + nombre del disco para desmontar una unidad de disco",
+        "aplicacion":"unmount sba1"        
     },
     {
-        "nombre":"Estado de Red",
-        "comando":"netstat",
-        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
-        "aplicacion":"netstat"        
-    },
-    {
-        "nombre":"Estado de Red",
-        "comando":"netstat",
-        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
-        "aplicacion":"netstat"        
-    },
-    {
-        "nombre":"Estado de Red",
-        "comando":"netstat",
-        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
-        "aplicacion":"netstat"        
-    },
-    {
-        "nombre":"Estado de Red",
-        "comando":"netstat",
-        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
-        "aplicacion":"netstat"        
-    },
-    {
-        "nombre":"Estado de Red",
-        "comando":"netstat",
-        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
-        "aplicacion":"netstat"        
-    },
-    {
-        "nombre":"Estado de Red",
-        "comando":"netstat",
-        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
-        "aplicacion":"netstat"        
-    },
-    {
-        "nombre":"Estado de Red",
-        "comando":"netstat",
-        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
-        "aplicacion":"netstat"        
-    },
-    {
-        "nombre":"Estado de Red",
-        "comando":"netstat",
-        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
-        "aplicacion":"netstat"        
-    },
-    {
-        "nombre":"Estado de Red",
-        "comando":"netstat",
-        "descripcion":"Utilice netstat para obtener info. de conexiones salientes y entrantes de nuestro host.",
-        "aplicacion":"netstat"        
+        "nombre":"Actualizar sistema",
+        "comando":"apt-get-update",
+        "descripcion":"Utilice apt-get-update para actualizar el sistema del host.",
+        "aplicacion":"apt-get-update"        
     }
+    
 ];
 
 //lectura de comandos
@@ -318,10 +271,7 @@ function mostraravanzados(){
 
 }
 
-function mostrarredesmovil(){
 
-    
-}
 
 
 
