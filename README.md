@@ -1,4 +1,4 @@
-# Conso-Learn
+# ConsoLe-arn
 
 Es una web app que te enseña comandos de Linux de forma divertida, este proyecto esta disponible en https://consolearn.netlify.app/.
 
